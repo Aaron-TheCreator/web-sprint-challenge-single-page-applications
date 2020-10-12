@@ -1,10 +1,18 @@
 .App {
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
-  height: 40vmin;
+  /* height: 40vmin; */
   pointer-events: none;
+  margin: 6%;
+  background-image: url("Assets/lambdalogo.jpg");
+  width: 50px;
+  height: 50px;
+  
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,18 +22,32 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #700606;
+  min-height: 25vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
+  /* padding: 3%; */
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.nav-links {
+  display: flex;
+  width: 40%;
+  justify-self: flex-end;
+  justify-content: flex-end;
+  align-self: flex-end;
+
+}
+
+.nav-links a {
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +58,12 @@
     transform: rotate(360deg);
   }
 }
+
+.home-cont {
+  background-image: url("Assets/Pizza.jpg");
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

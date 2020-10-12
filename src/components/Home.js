@@ -11,7 +11,7 @@ function Home(props) {
 
     return (
         <div className="home-cont">
-            <button className="pizza-button" onclick={routeToPizza}>Make A Pizza!</button>
+            <button className="pizza-button" onClick={routeToPizza}>Make A Pizza!</button>
         </div>
     )
 }

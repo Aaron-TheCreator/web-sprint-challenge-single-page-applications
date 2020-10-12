@@ -7,10 +7,13 @@ import Pizza from "./components/Pizza";
 const App = () => {
   return (
     <div className="App">
-      <nav>
-        <img src="../Assets/lambdalogo.png" alt="Lambda School Logo"/>
+
+      
+
+      <nav className="App-header">
+      <div className="App-logo" ></div>
         <h1>Lambda Eats!</h1>
-        <div className="nav-link">
+        <div className="nav-links">
           <Link to="/">Home</Link>
           <Link to="/pizza">Make Your Pizza</Link>
         </div>
@@ -23,3 +26,6 @@ const App = () => {
   );
 };
 export default App;
+
+
+// /Users/aaronmvskoke/PT19/web-sprint-challenge-single-page-applications/Assets/lambdalogo.png
