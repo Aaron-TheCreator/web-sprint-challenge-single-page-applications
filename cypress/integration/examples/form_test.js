@@ -5,8 +5,8 @@ describe("test our form inputs", () => {
     })
     it("adds text to inputs and submits form", () => {
         cy.get("[data-cy=name]")
-            .type("Daddy")
-            .should("have.value", "Daddy")
+            .type("Ya Fatha")
+            .should("have.value", "Ya Fatha")
         cy.get("[data-cy=size]")
             .select("Extra-Large")
             .should("have.value", "Extra-Large")
