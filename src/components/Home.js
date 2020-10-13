@@ -11,7 +11,13 @@ function Home(props) {
 
     return (
         <div className="home-cont">
-            <button className="pizza-button" onClick={routeToPizza}>Make A Pizza!</button>
+            <div className="home-card">
+                <h2>
+                    fuelUpForYourNextFunction(pizza)
+                </h2>
+                <div className="home-img" ></div>
+                <button className="button" onClick={routeToPizza}>Make A Pizza!</button>
+            </div>
         </div>
     )
 }

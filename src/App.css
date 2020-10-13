@@ -1,3 +1,7 @@
+label, .toppings {
+  font-weight: bold;
+}
+
 .App {
   text-align: left;
   display: flex;
@@ -33,6 +37,17 @@
   /* padding: 3%; */
 }
 
+.App-footer {
+  background-color: #700606;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -41,13 +56,14 @@
   display: flex;
   width: 40%;
   justify-self: flex-end;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-self: flex-end;
 
 }
 
 .nav-links a {
   text-decoration: none;
+  color: #eff1f1;
 }
 
 @keyframes App-logo-spin {
@@ -67,3 +83,77 @@
   align-items: center;
 }
 
+.home-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eff1f1;
+  padding:3%;
+  border-radius: 11%;
+  color: #700606;
+}
+
+.home-img {
+  background-image: url("Assets/add.jpg");
+  background-repeat: no-repeat;
+  min-height: 280px;
+  min-width: 400px;
+  border-radius: 11%;
+}
+
+.form-cont {
+  background-image: url("Assets/Pizza.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+
+.pizza-form {
+  min-width: 50%;
+  background-color: #eff1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10%;
+  border-radius: 10%;
+  
+}
+
+
+.toppings {
+  display: grid;
+  text-align: left;
+  width: 80%;
+
+  
+}
+
+
+
+.button {
+  margin-top:8%;
+  max-width: 50%;
+  font-size: 1.2rem;
+  color: #eff1f1;
+  box-shadow: #240404cb;
+  background-color: #700606;
+  padding:3%;
+  border-radius: 11% 8%;
+  -webkit-box-shadow: 2px 5px 16px 0px #240404cb, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 2px 5px 16px 0px #240404cb, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.button:disabled {
+  opacity: .5;
+  -webkit-box-shadow: 2px 5px 16px 0px #2404048e, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 2px 5px 16px 0px #2404048e, 5px 5px 15px 5px rgba(0,0,0,0);
+  
+}
+
+.error {
+  color: #700606;
+}

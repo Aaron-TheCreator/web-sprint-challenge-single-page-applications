@@ -22,6 +22,12 @@ const App = () => {
     
     <Route exact path="/" component={Home}/>
     <Route path="/pizza" component={Pizza}/>
+
+    <footer className="App-footer">
+      <span>
+      &Lambda; Lambda Eats &copy; 2020
+      </span>
+    </footer>
     </div>
   );
 };
