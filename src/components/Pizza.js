@@ -91,7 +91,7 @@ function Pizza() {
     // schema
 
     const formSchema = yup.object().shape({
-        name: yup.string().required("Name is required"),
+        name: yup.string().min(2).required("Name is required"),
         size: yup.string().oneOf(["Small", "Medium", "Large", "Extra-Large"]).required("Pick a size"),
         pepperoni: yup.boolean().oneOf([true]),
         sausage: yup.boolean().oneOf([true]),
@@ -137,6 +137,7 @@ function Pizza() {
                         name="name"
                         value={formState.name}
                         onChange={inputChange}
+                        data-cy="name"
                     />
                     {errors.name.length > 0 ? <p className="error">{errors.name}</p> : null}
                 </label>
@@ -148,13 +149,14 @@ function Pizza() {
                         name="size"
                         value={formState.size}
                         onChange={inputChange}
+                        data-cy="size"
                         
                     >
                         <option value="">--Choose Size--</option>
                         <option value="Small">Small</option>
                         <option value="Medium">Medium</option>
                         <option value="Large">Large</option>
-                        <option value="Exta-Large">Extra-Large</option>
+                        <option value="Extra-Large">Extra-Large</option>
 
                     </select>
                     {errors.size.length > 0 ? <p className="error">{errors.size}</p> : null}
@@ -170,6 +172,7 @@ function Pizza() {
                             name="pepperoni"
                             checked={formState.pepperoni}
                             onChange={inputChange}
+                            data-cy="pepperoni"
                         />
                         Pepperoni
                         {errors.pepperoni.length > 0 ? <p className="error">{errors.pepperoni}</p> : null}
@@ -182,6 +185,7 @@ function Pizza() {
                             name="sausage"
                             checked={formState.sausage}
                             onChange={inputChange}
+                            data-cy="sausage"
                         />
                         Sausage
                         {errors.sausage.length > 0 ? <p className="error">{errors.sausage}</p> : null}
@@ -194,6 +198,7 @@ function Pizza() {
                             name="bellpepper"
                             checked={formState.bellpepper}
                             onChange={inputChange}
+                            data-cy="bellpepper"
                         />
                         Bell Pepper
                         {errors.bellpepper.length > 0 ? <p className="error">{errors.bellpepper}</p> : null}
@@ -206,6 +211,7 @@ function Pizza() {
                             name="olive"
                             checked={formState.olive}
                             onChange={inputChange}
+                            data-cy="olive"
                         />
                         Olives
                         {errors.olive.length > 0 ? <p className="error">{errors.olive}</p> : null}
@@ -221,6 +227,7 @@ function Pizza() {
                         value={formState.instructions}
                         onChange={inputChange}
                         className="instructions"
+                        data-cy="instructions"
                     />
                 </label>
 
@@ -228,7 +235,9 @@ function Pizza() {
                 <button 
                     type="submit"
                     className="button"
-                    disabled={buttonDisabled}>
+                    disabled={buttonDisabled}
+                    data-cy="submit"
+                    >
                     Print My Pizza
                     
                 </button>
