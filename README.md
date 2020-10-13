@@ -31,22 +31,25 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 1. In 1-2 sentences, explain what React's `useRouteMatch` hook is used for.
+    useRouteMatch effect hook attempts to match the current URL, similar to the <Route> element; allows you to access data from the match without rendering <Route>.
 
 1. How would you explain form validation to someone who has never programmed before?
+    Validation (form validation) refers to the process of assuring user input matches the expected input type, format, etc before using the user inputted data.
 
 1. In 1-2 sentences, define end to end testing.
+    End-to-end testing refers to testing the full life-cycle/"happy path" of an application; from marketing page, to login, to form validation, event firing (button click, etc), to confirmation.
 
 
 ## Instructions
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: `git checkout -b <firstName-lastName>`
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: `git push origin <firstName-lastName>`
+- [X] Create a forked copy of this project
+- [X] Add your team lead as collaborator on Github
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [X] Create a new branch: `git checkout -b <firstName-lastName>`
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [X] Push commits: `git push origin <firstName-lastName>`
 
 ### Task 2: Project Requirements
 
@@ -59,7 +62,7 @@ Your finished project must include all of the following requirements:
 - [X] A dropdown for pizza size
 - [X] A checklist for toppings - at least 4 (hint: name each separately!)
 - [X] Text input for special instructions
-- [?] An Add to Order button that submits form and returns a database record of name, size, toppings and special instructions
+- [X] An Add to Order button that submits form and returns a database record of name, size, toppings and special instructions
 
 #### Testing MVP
 
