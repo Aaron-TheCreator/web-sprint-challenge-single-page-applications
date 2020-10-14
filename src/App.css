@@ -123,6 +123,19 @@ label, .toppings {
   
 }
 
+@media (max-width: 400px) {
+  
+  .pizza-form {
+    width: 60vmin;
+    
+
+  }
+
+  .home-card {
+    width: 60vmin;
+  }
+}
+
 
 .toppings {
   display: grid;
